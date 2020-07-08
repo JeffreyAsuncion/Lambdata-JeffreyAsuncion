@@ -1,2 +1,2 @@
 # Lambdata-JeffreyAsuncion
-a collection of data science utility functions
+A collection of data science utility functions.
