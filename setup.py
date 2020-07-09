@@ -7,11 +7,11 @@ setuptools.setup(
     name="lambdata-jeffreyasuncion", # Replace with your own username
     version="0.0.1",
     author="Jeffrey Asuncion",
-    author_email="author@example.com",
+    author_email="jeffrey.l.asuncion@gmail.com",
     description="A small example package",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/JeffreyAsuncion/Lambdata-JeffreyAsuncion",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
