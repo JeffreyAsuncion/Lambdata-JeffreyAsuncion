@@ -1,4 +1,4 @@
-import pandas as import pd
+import pandas as pd
 
 def enlarge(n):
     '''This function will multiple the input b 100'''
