@@ -2,6 +2,10 @@ def enlarge(n):
     '''This function will multiple the input b 100'''
     return n * 100
 
+if __name__=='__main__':
+    y = int(input("Enter a Number: "))
+    print(y, enlarge(y))
+
 def train_val_test(X,y):
     '''
     X, y are the feature matrix and target vector
