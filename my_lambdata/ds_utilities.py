@@ -1,28 +1,30 @@
+import pandas as import pd
+
 def enlarge(n):
     '''This function will multiple the input b 100'''
     return n * 100
 
-# if __name__=='__main__':
-#     y = int(input("Enter a Number: "))
-#     print(y, enlarge(y))
 
-def train_val_test(X,y):
+def train_val_test(X):
     '''
-    X, y are the feature matrix and target vector
+    X are the DataFrame
     Splits the data in the following 
     train set 80%
     val set 10%
     test set 10%
+    print size of train, val, test before and after split
     function returns
-    X_train, y_train, X_val, y_val, X_test, y_test
+    train, val, test
     '''
     import numpy as np
     from sklearn.model_selection import train_test_split
-  
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=42)
-    X_val, X_test, y_val, y_test = train_test_split(X_test, y_test, test_size=0.50, random_state=42)
+    X = X.copy()
+    train, test = train_test_split(X, test_size=0.20, random_state=42)
+    val, test = train_test_split(test, test_size=0.50, random_state=42)
 
-    return X_train, y_train, X_val, y_val, X_test, y_test
+    return train, val, test
+
+
 
 def states_abbr_to_full(XX):
     '''
@@ -89,6 +91,8 @@ def states_abbr_to_full(XX):
           'WY': 'Wyoming'
     }
     return abbr_to_full.get(XX.upper())
+
+
 
 def states_full_to_abbr(fullName):
     '''
