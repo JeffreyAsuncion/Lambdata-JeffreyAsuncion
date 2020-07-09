@@ -152,13 +152,13 @@ def states_full_to_abbr(fullName):
     }
     return full_to_abbr.get(fullName.upper().title())
 
-if __name__ == '__main__' :
-    y = int(input("Choose a number: "))
-    print(y, enlarge(y))
-    z = input("Enter state abbr: ")
-    states_abbr_to_full(z)
-    a = input("Enter full state name ")
-    states_full_to_abbr(a)
+# if __name__ == '__main__' :
+#     y = int(input("Choose a number: "))
+#     print(y, enlarge(y))
+#     z = input("Enter state abbr: ")
+#     states_abbr_to_full(z)
+#     a = input("Enter full state name ")
+#     states_full_to_abbr(a)
 
 
 
