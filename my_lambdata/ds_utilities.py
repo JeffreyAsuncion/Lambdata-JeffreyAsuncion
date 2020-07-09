@@ -3,7 +3,7 @@ def enlarge(n):
     return n * 100
 
 def train_val_test(X,y):
-  '''
+    '''
     X, y are the feature matrix and target vector
     Splits the data in the following 
     train set 80%
@@ -11,14 +11,14 @@ def train_val_test(X,y):
     test set 10%
     function returns
     X_train, y_train, X_val, y_val, X_test, y_test
-  '''
-  import numpy as np
-  from sklearn.model_selection import train_test_split
+    '''
+    import numpy as np
+    from sklearn.model_selection import train_test_split
   
-  X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=42)
-  X_val, X_test, y_val, y_test = train_test_split(X_test, y_test, test_size=0.50, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=42)
+    X_val, X_test, y_val, y_test = train_test_split(X_test, y_test, test_size=0.50, random_state=42)
 
-  return X_train, y_train, X_val, y_val, X_test, y_test
+    return X_train, y_train, X_val, y_val, X_test, y_test
 
 def states_abbr_to_full(XX):
     '''
