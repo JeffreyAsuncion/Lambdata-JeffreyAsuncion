@@ -36,7 +36,9 @@ class Ds_utilites_class():
 
         import numpy as np
         from sklearn.model_selection import train_test_split
+
         X = X.copy()
+        
         train, test = train_test_split(X, test_size=0.20, random_state=42)
         val, test = train_test_split(test, test_size=0.50, random_state=42)
 
