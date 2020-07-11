@@ -2,21 +2,32 @@ import pandas as pd
 
 
 def enlarge(n):
-    '''This function will multiple the input b 100'''
+    """
+    Takes a number and returns the number times 100
+
+    Args:
+        n: any number
+
+    Returns:
+        This returns the number  * 100
+    """
     return n * 100
 
 
 def train_val_test(X):
-    '''
-    X are the DataFrame
-    Splits the data in the following
+    """
+    Splits the DataFrame in the following
     train set 80%
     val set 10%
     test set 10%
-    print size of train, val, test before and after split
-    function returns
-    train, val, test
-    '''
+
+    Args:
+        X: a DataFrame
+
+    Returns:
+        This function returns train, val, test
+    """
+
     import numpy as np
     from sklearn.model_selection import train_test_split
     X = X.copy()
@@ -26,11 +37,19 @@ def train_val_test(X):
     return train, val, test
 
 
-def states_abbr_to_full(XX):
+def states_abbr_to_full(AB):
     '''
-    function takes an abbreviation
-    return full name of US State
+    Takes US STATE abbreviation
+    to full name of US STATE
+
+    Args:
+        AB: State Abbreviation
+
+    Returns:
+        This function returns 
+        full name of US State
     '''
+
     abbr_to_full = {
         'AK': 'Alaska',
         'AL': 'Alabama',
@@ -90,14 +109,22 @@ def states_abbr_to_full(XX):
         'WV': 'West Virginia',
         'WY': 'Wyoming'
     }
-    return abbr_to_full.get(XX.upper())
+    return abbr_to_full.get(AB.upper())
 
 
 def states_full_to_abbr(fullName):
     '''
-    function takes full name of US State
-    return an abbreviation
+    Takes US STATE full name
+    maps it abbreviation of US STATE
+
+    Args:
+        fullName: US State fullName
+
+    Returns:
+        This function returns 
+        an abbreviation of US State
     '''
+
     full_to_abbr = {
         'Alabama': 'AL',
         'Alaska': 'AK',
@@ -158,11 +185,3 @@ def states_full_to_abbr(fullName):
         'Wyoming': 'WY'
     }
     return full_to_abbr.get(fullName.upper().title())
-
-# if __name__ == '__main__' :
-#     y = int(input("Choose a number: "))
-#     print(y, enlarge(y))
-#     z = input("Enter state abbr: ")
-#     states_abbr_to_full(z)
-#     a = input("Enter full state name ")
-#     states_full_to_abbr(a)
