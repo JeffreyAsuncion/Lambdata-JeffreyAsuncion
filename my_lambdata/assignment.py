@@ -25,7 +25,7 @@ def add_state_names_column(my_df):
 
     new_df["name"] = new_df["abbrev"].map(names_map)
     
-    #DS15 50:08 timestamp 
+    #DS15 50:08  timestamp 
      
 
     return new_df
@@ -35,6 +35,6 @@ if __name__ == "__main__" :
     df = DataFrame({"abbrev": ["CA", "CO", "CT", "DC", "TX"]})
     print(df.head())
     
-    add_state_names_column(df)
-    print(df.head())
+    mapped_df = add_state_names_column(df)
+    print(mapped_df.head())
 
