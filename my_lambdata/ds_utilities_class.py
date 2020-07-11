@@ -3,9 +3,9 @@
 
 import pandas as pd
 
-class Ds_utilites_class():
+class Ds_utilites_class(): # Classes usually use CamelCase DsUtilitesClass
     def __init__(self):
-
+        # __init__ is defined but is empty.  Use 'pass' if nothing is needed
 
     def enlarge(self, n):
         """
@@ -46,7 +46,7 @@ class Ds_utilites_class():
 
 
     def states_abbr_to_full(self, AB):
-        '''
+        '''                                         # Documentation usually uses three double quotes """
         Takes US STATE abbreviation
         to full name of US STATE
 
@@ -121,7 +121,7 @@ class Ds_utilites_class():
 
 
     def states_full_to_abbr(self, fullName):
-        '''
+        '''                                         # Documentation usually uses three double quotes """
         Takes US STATE full name
         maps it abbreviation of US STATE
 
