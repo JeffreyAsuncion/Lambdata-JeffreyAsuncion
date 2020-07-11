@@ -4,7 +4,7 @@
 import pandas as pd
 
 class Ds_utilites_class():
-    def __init__(self)
+    def __init__(self):
 
 
     def enlarge(self, n):
