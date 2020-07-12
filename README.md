@@ -3,7 +3,7 @@ A collection of data science utility functions.
 
 
 # Train/validate/test split function for a dataframe
-'''py
+"""py
 def train_val_test(X,y):
     '''
     X, y are the feature matrix and target vector
@@ -14,22 +14,22 @@ def train_val_test(X,y):
     function returns
     X_train, y_train, X_val, y_val, X_test, y_test
     '''
-'''
+"""
 
 # State abbreviation -> Full Name and visa versa. FL -> Florida, etc. (Handle Washington DC and territories like Puerto Rico etc.)
 
-'''py
+"""py
 def states_abbr_to_full(XX):
     '''
     function takes an abbreviation
     return full name of US State
     '''
-'''
+"""
 
-'''py
+"""py
 def states_full_to_abbr(fullName):
     '''
     function takes full name of US State
     return an abbreviation
     '''
-'''
+"""

@@ -3,10 +3,11 @@
 
 import pandas as pd
 
-class Ds_utilites_class(): # Classes usually use CamelCase DsUtilitesClass
+class DsHelper(): # Classes usually use CamelCase DsUtilitesClass
     def __init__(self):
         # __init__ is defined but is empty.  Use 'pass' if nothing is needed
-
+        pass
+    
     def enlarge(self, n):
         """
         Takes a number and returns the number times 100
