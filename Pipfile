@@ -9,6 +9,7 @@ autopep8 = "*"
 
 [packages]
 pandas = "*"
+ipython = "*"
 
 [requires]
 python_version = "3.7"
