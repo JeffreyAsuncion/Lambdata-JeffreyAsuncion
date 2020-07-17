@@ -1,8 +1,29 @@
 # Lambdata-JeffreyAsuncion
 A collection of data science utility functions.
 
+## Installation
+
+```py
+pip install -i https://test.pypi.org/simple/ lambdata-jeffreyasuncion==0.0.14
+```
+
+## Usage
+
+```py
+from my_lambdata.ds_utilities import enlarge
+
+x = 11
+print(enlarge(x)
+```
 
 # Train/validate/test split function for a dataframe
+```py
+from my_lambdata.ds_utilities import train_val_test
+
+df = DataFrame
+train, val, test = train_val_test(df)
+
+
 """py
 def train_val_test(X,y):
     '''
