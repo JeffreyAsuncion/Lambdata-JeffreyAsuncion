@@ -58,8 +58,7 @@ X_train, X_val, X_test, y_train, y_val, y_test =
 from my_lambdata.ds_utilities import MyDataSplitter
 
 mds = MyDataSplitter()
-date_divider(date_col):
-        return converted_df
+mds.date_divider(date_col):
 ```
 
 ## Print the split summary of Train, Val, Test
@@ -67,5 +66,5 @@ date_divider(date_col):
 from my_lambdata.ds_utilities import MyDataSplitter
 
 mds = MyDataSplitter()
-print_split_summary(X_train, X_val, X_test):
+mds.print_split_summary(X_train, X_val, X_test):
 ```
