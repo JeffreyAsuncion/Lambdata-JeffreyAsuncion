@@ -7,9 +7,9 @@ A collection of data science utility functions.
 pip install -i https://test.pypi.org/simple/ lambdata-jeffreyasuncion==0.0.14
 ```
 
-## Usage
+# Usage
 
-# Enlarge function
+## Enlarge function
 ```py
 from my_lambdata.ds_utilities import enlarge
 
@@ -17,7 +17,7 @@ x = 11
 print(enlarge(x)
 ```
 
-# Train/validate/test split function for a dataframe
+## Train/validate/test split function for a dataframe
 ```py
 from my_lambdata.ds_utilities import train_val_test
 
@@ -25,7 +25,7 @@ df = DataFrame
 train, val, test = train_val_test(df)
 ```
 
-# State abbreviation -> Full Name
+## State abbreviation -> Full Name
 ```py
 from my_lambdata.ds_utilities import states_abbr_to_full
 
@@ -33,7 +33,7 @@ abbr = "NJ"
 states_abbr_to_full(abbr)
 ```
 
-# State Full Name  -> Abbreviation
+## State Full Name  -> Abbreviation
 ```py
 from my_lambdata.ds_utilities import states_abbr_to_full
 
@@ -41,36 +41,23 @@ fullName = "New Jersey"
 states_full_to_abbr(fullName)
 ```
 
+## 
+```py
+from my_lambdata.ds_utilities import MyDataSplitter
 
+mds = MyDataSplitter()
+X_train, X_val, X_test, y_train, y_val, y_test = 
+    mds.train_validation_test_split(self,
+                                train_size=0.7, val_size=0.1,
+                                test_size=0.2, random_state=None,
+                                shuffle=True):
+```
 
+```py
+date_divider(date_col):
+        return converted_df
+```
 
-"""py
-def train_val_test(X,y):
-    '''
-    X, y are the feature matrix and target vector
-    Splits the data in the following 
-    train set 80%
-    val set 10%
-    test set 10%
-    function returns
-    X_train, y_train, X_val, y_val, X_test, y_test
-    '''
-"""
-
-# State abbreviation -> Full Name and visa versa. FL -> Florida, etc. (Handle Washington DC and territories like Puerto Rico etc.)
-
-"""py
-def states_abbr_to_full(XX):
-    '''
-    function takes an abbreviation
-    return full name of US State
-    '''
-"""
-
-"""py
-def states_full_to_abbr(fullName):
-    '''
-    function takes full name of US State
-    return an abbreviation
-    '''
-"""
+```py
+print_split_summary(X_train, X_val, X_test):
+```
