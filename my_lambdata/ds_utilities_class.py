@@ -230,6 +230,7 @@ class My_Data_Splitter():
             X_train_val, y_train_val, test_size=val_size / (train_size + val_size),
             random_state=random_state, shuffle=shuffle)
         return X_train, X_val, X_test, y_train, y_val, y_test
+        
     def print_split_summary(self, X_train, X_val, X_test):
         '''
         This function prints summary statistics for X_train, X_val, and X_test.

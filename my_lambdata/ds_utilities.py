@@ -115,7 +115,7 @@ def states_abbr_to_full(AB):
     return abbr_to_full.get(AB.upper())
 
 
-def states_full_to_abbr(fullName):
+def states_full_to_abbr(stateFullName):
     """
     Takes US STATE full name
     maps it abbreviation of US STATE
@@ -187,5 +187,5 @@ def states_full_to_abbr(fullName):
         'Wisconsin': 'WI',
         'Wyoming': 'WY'
     }
-    return full_to_abbr.get(fullName.upper().title())
+    return full_to_abbr.get(stateFullName.title())
 
