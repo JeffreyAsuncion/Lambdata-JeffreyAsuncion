@@ -41,7 +41,7 @@ fullName = "New Jersey"
 states_full_to_abbr(fullName)
 ```
 
-## 
+## Split data into Train, Val, Test, with features Matrix and Target Vector
 ```py
 from my_lambdata.ds_utilities import MyDataSplitter
 
@@ -53,11 +53,19 @@ X_train, X_val, X_test, y_train, y_val, y_test =
                                 shuffle=True):
 ```
 
+## Divide the Date into Year, Month, Day columns
 ```py
+from my_lambdata.ds_utilities import MyDataSplitter
+
+mds = MyDataSplitter()
 date_divider(date_col):
         return converted_df
 ```
 
+## Print the split summary of Train, Val, Test
 ```py
+from my_lambdata.ds_utilities import MyDataSplitter
+
+mds = MyDataSplitter()
 print_split_summary(X_train, X_val, X_test):
 ```
