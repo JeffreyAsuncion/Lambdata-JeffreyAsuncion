@@ -9,6 +9,7 @@ pip install -i https://test.pypi.org/simple/ lambdata-jeffreyasuncion==0.0.14
 
 ## Usage
 
+# Enlarge function
 ```py
 from my_lambdata.ds_utilities import enlarge
 
@@ -22,6 +23,25 @@ from my_lambdata.ds_utilities import train_val_test
 
 df = DataFrame
 train, val, test = train_val_test(df)
+```
+
+# State abbreviation -> Full Name
+```py
+from my_lambdata.ds_utilities import states_abbr_to_full
+
+abbr = "NJ"
+states_abbr_to_full(abbr)
+```
+
+# State Full Name  -> Abbreviation
+```py
+from my_lambdata.ds_utilities import states_abbr_to_full
+
+fullName = "New Jersey"
+states_full_to_abbr(fullName)
+```
+
+
 
 
 """py
